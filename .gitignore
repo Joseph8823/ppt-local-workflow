@@ -1,0 +1,23 @@
+# Keep project inputs, application previews and generated releases out of source.
+/private/
+/work/
+/outputs/
+/dist/
+.env
+.env.*
+!.env.example
+*.pptx
+*.pptm
+*.potx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
