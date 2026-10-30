@@ -5,12 +5,13 @@ Keep this record with the project deliverables, outside the public skill source.
 Record:
 
 1. **Scope:** requested formats, agreed page counts, entry stage, approved content/visual-reference version and any affected page IDs.
-2. **Native environment:** application identity/version and measured page dimensions. For SVG, include root dimensions, viewBox, insertion rectangle and mapping ratios.
-3. **Checks actually performed:** source/static checks, editing-canvas inspection, inserted/converted comparison where relevant, export resolution, relocation and reopen checks. Mark unavailable checks as pending.
-4. **Per-page object counts:** actual converted/native text frames, whole picture objects and other leaf shapes. Describe table cells or charts separately when present. Do not count grouping containers twice.
-5. **Visual outcome:** wrapping, line width/height, baseline/start positions, boundaries, spacing, picture placement and visible collisions. Specify measured versus visual observations and any use of a baseline proxy.
-6. **Remaining differences:** fonts, frame splitting, approximation of complex art, numeric target exceptions and uncompleted checks. State the actual editable scope.
-7. **Final files:** exact saved paths, tested file version/integrity and which preview is for review. Distinguish final deliverables from temporary test documents.
+2. **Reviews and advance notices:** opening workflow/personal-review reminder; approved framework, actual sample image, exact wording and complete offline HTML versions; evidence of the user's approvals; immediate notice before local control. Identify any reused reviews or the scoped-edit route. Keep missing approvals pending rather than treating a generated artifact as approved.
+3. **Native environment:** application identity/version and measured page dimensions. For SVG, include root dimensions, viewBox, insertion rectangle and mapping ratios.
+4. **Checks actually performed:** source/static checks, editing-canvas inspection, inserted/converted comparison where relevant, export resolution, relocation and reopen checks. Mark unavailable checks as pending.
+5. **Per-page object counts:** actual converted/native text frames, whole picture objects and other leaf shapes. Describe table cells or charts separately when present. Do not count grouping containers twice.
+6. **Visual outcome:** wrapping, line width/height, baseline/start positions, boundaries, spacing, picture placement and visible collisions. Specify measured versus visual observations and any use of a baseline proxy.
+7. **Remaining differences:** fonts, frame splitting, approximation of complex art, numeric target exceptions and uncompleted checks. State the actual editable scope.
+8. **Final files:** exact saved paths, tested file version/integrity and which preview is for review. Distinguish final deliverables from temporary test documents.
 
 Example page summary, using invented counts:
 

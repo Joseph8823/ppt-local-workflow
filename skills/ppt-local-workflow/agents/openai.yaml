@@ -1,4 +1,4 @@
 interface:
   display_name: "本机可编辑 PPT 工作流"
-  short_description: "从确认内容与整套页面样本，到本机 PowerPoint 制作、检查与可编辑交付"
-  default_prompt: "使用 $ppt-local-workflow，根据现有材料从合适阶段开始，直接在本机完成可编辑演示文稿并检查保存结果。"
+  short_description: "先确认框架、样板图、文字与完整 HTML，再提醒并操作本机制作可编辑 PPT"
+  default_prompt: "使用 $ppt-local-workflow，开场说明步骤并提醒我亲自审阅；先确认框架和主要内容，再确认样板图、逐页文字与完整 HTML，提前提醒后操作本机制作可编辑 PPT，沿用已完成的确认。"

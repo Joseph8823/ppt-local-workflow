@@ -4,6 +4,8 @@ This reference applies to desktop PowerPoint. Other presentation applications re
 
 ## Discover and operate the actual application
 
+Before controlling the desktop application for a new deck or complete reconstruction, complete the framework, sample-image, exact-wording and complete-HTML reviews in [content-and-visuals.md](content-and-visuals.md). Immediately announce the upcoming local operation; reuse existing authorization rather than asking for it again. A scoped edit to an approved editable deck needs the scoped notice and affected-slide checks, not a repeated whole-deck design process.
+
 Identify the user's intended application and available access before editing. Use supported document APIs/COM for reliable bulk operations and native UI controls for commands and canvas inspection as appropriate. If a COM alias opens another office suite, identify the mismatch rather than treating it as Microsoft PowerPoint. Do not change office registration or install software as an incidental repair.
 
 On Windows, inspect the requested document through available PowerPoint controls or its document object model. Read slide dimensions and recurse through grouped shapes to obtain leaf counts. Record native text bounds separately from shape bounds. API access can automate measurement and exports; it does not replace deselected editing-canvas inspection.
