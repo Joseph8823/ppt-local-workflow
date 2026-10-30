@@ -38,6 +38,42 @@ Request: A complete twelve-page offline HTML is approved. Rebuild SVG only, with
 
 Expected behavior: Reuse approval; do not restart content/design. Measure the target application and insertion rectangle. Treat changed font metrics as a failure even when anchors stay fixed. Correct and retest the SVG source, using equal rectangles and unselected views. Report actual frame fragmentation. Deliver SVG only; disclose remaining failures if time expires.
 
+## Two states agree but both depart from approved HTML
+
+Request: The approved HTML and template are fixed. Inserted and converted text agree within 2%, but both are 12% larger than the approved page and intrude into a figure. The SVG anchors are unchanged and the browser view looks correct.
+
+Expected behavior: Fail the layout check. Compare the approved HTML, inserted SVG and converted shapes at the same normalized page size; state that agreement between the two PowerPoint states cannot excuse their common deviation from the approved page. Correct the final SVG and repeat actual target-template tests. Do not redesign the approved content or move only temporary converted objects.
+
+## Inserted SVG has no native per-line TextFrame
+
+Request: PowerPoint exposes the inserted SVG as one graphic. After conversion it exposes editable text frames. An acceptance table must include line boundaries, glyph height, width and baseline for both states.
+
+Expected behavior: Report the inserted graphic bounds and obtain per-line visible ink measurements from equal-resolution PowerPoint exports where practical. Clearly identify source-derived positions, exported-ink estimates and any baseline proxy. Native converted frame/text bounds belong in separate fields. Mark unavailable native per-line inserted TextFrame bounds as unavailable; never invent native bounds from source coordinates or equate frame bounds with visible glyph bounds.
+
+## SVG-only, whole-paragraph frame cannot be guaranteed
+
+Request: The user wants only SVG and no generated PPTX. Conversion produces several complete-line native frames for a paragraph. Someone proposes replacing those frames with one native text box in the test presentation, leaving the SVG unchanged, and claiming the SVG now yields a single paragraph TextFrame.
+
+Expected behavior: Reject the claim and the unchanged-source workaround. Prefer stable layout and editable full visual lines; report actual converted frame counts and the remaining paragraph limitation. A single SVG text element or a group of native frames does not prove a single paragraph TextFrame. Do not replace the requested SVG with a PPTX or a native-only correction. When PPTX file generation is forbidden, test with an unsaved/untitled temporary presentation and do not save a new PPTX; if the required test is unavailable, state the exact missing verification.
+
+## Font units changed without target-size verification
+
+Request: A test on another 16:9 template looked correct. The author changes font-size to pt, the SVG root size and a scale transform, and uses an extra downloadable font. The actual target template has not been measured. This is offered as a proven fix.
+
+Expected behavior: Read actual target PageSetup dimensions and the final insertion rectangle, record the viewBox mapping, and test all compensation in both PowerPoint states at that size. Prefer fonts already available to PowerPoint on the target system; do not require font installation, plugins, web fonts or external CSS. Explain that device substitution can change metrics and wrapping. Do not treat changed units, source attributes or another template's result as proof.
+
+## Fragmented figure, source counts hide native fragmentation
+
+Request: A source SVG contains one text element for a paragraph and several small image tiles of one original research figure. A report counts the source elements and a native grouping container as editable objects. The final SVG is moved to a delivery folder without reinsertion.
+
+Expected behavior: Restore each original figure as one complete embedded image, keep editable complete text lines and few native background/border/separator shapes, and verify after conversion that body text is not per-character frames and figures are not split into many pictures. Recurse to actual native leaf text/picture/other counts without double-counting groups, link figures to original whole-image identities, and verify the relocated delivered SVG still displays its images. Source counts and successful browser rendering do not establish native integrity.
+
+## Numeric residuals and incomplete page coverage
+
+Request: A tested line has 6% glyph-height drift, 2% width drift and no overlap. Only two of ten pages have been inspected in the deselected PowerPoint editing canvas. All ten sources pass the structural checker.
+
+Expected behavior: Do not claim all pages passed. Correct and retest material drift, inspect every page in both states, and disclose any remaining numerical target exceptions with methods and actual per-page counts. Aim for at most 5% visible-height/whole-line-width difference and at most 1% page-normalized start/baseline displacement; overflow, unintended overlap, per-character body frames and figure fragmentation remain failures. Structural success alone cannot pass the native visual gate.
+
 ## Three samples, incomplete whole-deck approval
 
 Request: A project update needs twelve slides. The audience, sources, outline, and three representative visual samples are approved. Finish the presentation directly on the local computer. A draft has three polished slides and nine repetitive placeholder layouts. Is it ready to rebuild and deliver?
