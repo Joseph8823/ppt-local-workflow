@@ -2,6 +2,8 @@
 
 This reference applies to desktop PowerPoint. Other presentation applications require their own actual-application validation. A compatible-looking export from a different application does not establish PowerPoint conversion behavior.
 
+For ordinary native PPTX construction, use [local-production.md](local-production.md). This reference adds the SVG-specific contract when SVG is requested or actually used; do not run a conversion experiment for a task that has no SVG. Batch native inspection/exports and reuse calibration until changed shared settings or new failures invalidate it. All delivered SVG pages still require both native states; speed does not turn sampling into complete acceptance.
+
 ## Approved-reference and delivery contract
 
 For structured SVG reconstruction, use the approved complete HTML and supplied PPT template as the fixed reference. Preserve wording, claims, page order, figure meaning and visual layout; do not reopen design decisions or rewrite content. Compare three views: the approved HTML, the same SVG inserted into PowerPoint, and that SVG converted to shapes. Both native states must remain close to the approved reference. Agreement between two equally enlarged native states is not acceptance.

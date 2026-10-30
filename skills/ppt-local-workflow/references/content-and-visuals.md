@@ -43,6 +43,16 @@ Prompt the user to personally check correctness, coverage and terminology. Keep 
 
 Translate the approved sample style and final wording across every page, using layouts that fit its content. Do not deliver a deck in which only the samples received the intended visual treatment. Inspect the complete set before presenting it to the user.
 
+### Shared page source for preview and editable output
+
+For newly authored decks, retain one canonical page description as you create the HTML. Record stable page/object IDs, page dimensions, text/labels, bounding rectangles, font/style, tables/cell values, simple shapes/connectors, image identities and display regions. Reuse page patterns and repeated elements. Keep this data with the project, embedded in the HTML or in its working source; the offline viewer must still work on its own.
+
+Generate the HTML preview and native PPTX or structured SVG from this same source. Native HTML text/shapes or preview images rendered from that source are both acceptable; whole-page PNGs plus plain notes must not be the only retained authoring source for a new editable deck. Do not maintain independent handwritten coordinate plans for the preview and the presentation.
+
+After sample approval, use image generation for the illustrations/assets that need it; reuse the approved page system for text, tables and labels. Avoid regenerating whole page images merely to change a sentence or move a label. For generated diagrams, keep the drawing and its intended editable labels/formulas separate from the outset. Preserve original research figures intact unless modification was authorized, and describe their agreed editable scope.
+
+For an already-approved raster-only HTML, keep its approved appearance and recover reusable layout/label data once before bulk reconstruction. Do not restart upstream design or pretend raster pages contain editable positions. Reuse any existing text, figures and builders to reduce this recovery work.
+
 Inspect both appearance and meaning:
 
 - Correct wording, digits, units, subscripts, superscripts, citations and page order.
@@ -76,3 +86,5 @@ Keep the final reference and a short approval record/page manifest outside the s
 When content changes before local production, correct the affected wording/images, replace those pages in the same cumulative HTML, and obtain approval of the revised affected content/complete preview. Retain unchanged approvals. After production, an authorized narrow edit to an approved editable deck can proceed with a scoped advance notice and affected-slide checks; it does not restart the entire process.
 
 Expand checks only when a shared font, template, scale or layout change can affect more pages. Avoid reproducing the whole deck for a local wording fix.
+
+Once the complete preview is approved, use [local-production.md](local-production.md) for one calibration pass and batch local construction. These technical checks do not create extra user approval gates.

@@ -2,6 +2,36 @@
 
 These scenarios contain invented projects and dimensions. Run them with a separate agent or review session, without permission to touch real documents. They test decisions, not slide rendering. Actual application validation is still required for a production deck.
 
+## Approved structured HTML, efficient native construction
+
+Request: A complete 18-page HTML, canonical text/layout data and assets are approved. The user wants native PPTX quickly. A representative page set already passed in the same template and builder, including save/reopen. Only a label on page 7 changed.
+
+Expected behavior: Reuse the source, approvals and calibration; update the label's shared record and construct/check the affected result. Batch required native construction/bounds checks, quickly inspect every final native canvas and look closely at problem pages. Do not rewrite coordinates, regenerate images/HTML, add SVG conversion, repeat pilot approval or re-export/reinspect unchanged pages without cause. Complete applicable final checks, save/reopen and deliver promptly.
+
+## Legacy raster HTML and embedded diagram labels
+
+Request: An approved complete HTML contains only rendered page images and separate wording. Several generated diagrams have titles, formulas and labels burned into their images. Those labels must be editable in the final PPTX; original research figures must remain whole.
+
+Expected behavior: Recover shared layout and diagram-label data once before the bulk build; plan clean diagram artwork and editable labels in the first reconstruction, while respecting image-editing tools and source preservation. Do not assume screenshot-plus-notes is directly editable, defer the labels until a late complaint, or modify original research figures without authorization. Preserve approval and avoid regenerating the complete upstream presentation.
+
+## Preflight catches compatibility before bulk work
+
+Request: A deck uses dense tables, arrows with special adjustments and a save/finalization helper. A cover exports correctly, but these object features and the saved file have not been tested. It is tempting to build the whole deck before configuring the runtime and final output path.
+
+Expected behavior: One representative calibration set exercises the actual text/table/arrow features and save/reopen path before batch construction. Resolve runtime/path/feature failures at that layer, keep required tool checks and a working candidate, and then reuse the verified construction route. A successful cover export cannot prove compatibility of untested features; do not invent an extra late finalization pipeline or overwrite an open candidate.
+
+## User takes over a usable draft
+
+Request: A saved 18-page PPTX was reopened successfully. Some optional reports and minor polish remain; complete visual acceptance has not been performed. The user says “this is enough, I will review and edit it myself”.
+
+Expected behavior: Stop further construction, polishing and optional finalization. Immediately provide the latest known usable saved file with the unfinished-check status. Do not claim full acceptance, launch more tools to fill reports, or withhold the available draft while doing optional bookkeeping.
+
+## Faster execution with explicit SVG contract
+
+Request: The user requests structured SVG with full target-template two-state checks but wants less repetition. The actual template, insertion method and fonts remain unchanged after a wording correction to page 6.
+
+Expected behavior: Preserve complete native two-state inspection for every delivered SVG page, actual converted counts and source fixes. Reuse valid calibration and unchanged-page evidence; reinsert/reconvert/recheck page 6 and any other affected pages, in batches where possible. Do not substitute a native-only patch, skip the final-source identity/embedding checks, or call a few sampled pages complete acceptance.
+
 ## New brief, no approved framework
 
 Request: Make an eight-slide campus recycling course report. The audience and page count are known, but no outline or wording has been reviewed. The deadline is close, the user wants to see the effect, and the agent has image generation and local PowerPoint access.

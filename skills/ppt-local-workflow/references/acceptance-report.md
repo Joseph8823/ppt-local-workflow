@@ -2,6 +2,8 @@
 
 Keep this record with the project deliverables, outside the public skill source. Scale detail to the task: a single title fix needs a short affected-slide report; a reconstructed whole deck needs page-level evidence.
 
+For an ordinary native PPTX, use a compact page summary: actual editable object counts, whether the native canvas was checked, issues and final saved/reopen status. Collect bounds/object evidence in one batch and reuse it; detailed manual text measurements are for calibration and suspect objects, not every unchanged line. The extended text table below applies to SVG reconstruction or an explicitly requested metrology report. Do not create additional reports, export sets or approval rounds solely to fill this template.
+
 Record:
 
 1. **Scope:** requested formats, agreed page counts, entry stage, approved content/visual-reference version and any affected page IDs.
